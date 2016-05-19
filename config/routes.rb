@@ -3,12 +3,6 @@ Rails.application.routes.draw do
 
   resources :district_hospitals
 
-  resources :mopdd_reports
-
-  resources :siscom_reports
-
-  resources :hmis_reports
-
   resources :bcc_reports
 
   resources :gender_reports
