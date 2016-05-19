@@ -1,0 +1,33 @@
+<%= form_for(@mopdd_report) do |f| %>
+  <% if @mopdd_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mopdd_report.errors.count, "error") %> prohibited this mopdd_report from being saved:</h2>
+
+      <ul>
+      <% @mopdd_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :periode %><br>
+    <%= f.date_select :periode %>
+  </div>
+  <div class="field">
+    <%= f.label :malaria_confirmed %><br>
+    <%= f.number_field :malaria_confirmed %>
+  </div>
+  <div class="field">
+    <%= f.label :malaria_confirmed_notified %><br>
+    <%= f.number_field :malaria_confirmed_notified %>
+  </div>
+  <div class="field">
+    <%= f.label :malaria_index_investigated %><br>
+    <%= f.number_field :malaria_index_investigated %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

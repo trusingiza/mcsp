@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Family Planning Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Report period</th>
+      <th>Delivery 1</th>
+      <th>Delivery 2</th>
+      <th>Neonantology male</th>
+      <th>Neonantology female</th>
+      <th>Anc oral contraceptive</th>
+      <th>Anc injectable</th>
+      <th>Anc implants</th>
+      <th>Anc iud</th>
+      <th>Anc male condom</th>
+      <th>Anc female condom</th>
+      <th>Anc barriers</th>
+      <th>Anc cycle beads</th>
+      <th>Anc auto observation</th>
+      <th>Anc tubal ligation</th>
+      <th>Anc vasectomy</th>
+      <th>Acceptors 1</th>
+      <th>Acceptors 2</th>
+      <th>Acceptors oral contraceptive</th>
+      <th>Acceptors injectable</th>
+      <th>Acceptors implants</th>
+      <th>Acceptors iud</th>
+      <th>Acceptors male condom</th>
+      <th>Acceptors female</th>
+      <th>Condom</th>
+      <th>Acceptors other barriers</th>
+      <th>Acceptors cycle beads</th>
+      <th>Acceptors auto observation</th>
+      <th>Acceptors tubal ligation</th>
+      <th>Acceptors vasectomy</th>
+      <th>References</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @family_planning_reports.each do |family_planning_report| %>
+      <tr>
+        <td><%= family_planning_report.report_period %></td>
+        <td><%= family_planning_report.delivery_1 %></td>
+        <td><%= family_planning_report.delivery_2 %></td>
+        <td><%= family_planning_report.neonantology_male %></td>
+        <td><%= family_planning_report.neonantology_female %></td>
+        <td><%= family_planning_report.anc_oral_contraceptive %></td>
+        <td><%= family_planning_report.anc_injectable %></td>
+        <td><%= family_planning_report.anc_implants %></td>
+        <td><%= family_planning_report.anc_iud %></td>
+        <td><%= family_planning_report.anc_male_condom %></td>
+        <td><%= family_planning_report.anc_female_condom %></td>
+        <td><%= family_planning_report.anc_barriers %></td>
+        <td><%= family_planning_report.anc_cycle_beads %></td>
+        <td><%= family_planning_report.anc_auto_observation %></td>
+        <td><%= family_planning_report.anc_tubal_ligation %></td>
+        <td><%= family_planning_report.anc_vasectomy %></td>
+        <td><%= family_planning_report.acceptors_1 %></td>
+        <td><%= family_planning_report.acceptors_2 %></td>
+        <td><%= family_planning_report.acceptors_oral_contraceptive %></td>
+        <td><%= family_planning_report.acceptors_injectable %></td>
+        <td><%= family_planning_report.acceptors_implants %></td>
+        <td><%= family_planning_report.acceptors_iud %></td>
+        <td><%= family_planning_report.acceptors_male_condom %></td>
+        <td><%= family_planning_report.acceptors_female %></td>
+        <td><%= family_planning_report.condom %></td>
+        <td><%= family_planning_report.acceptors_other_barriers %></td>
+        <td><%= family_planning_report.acceptors_cycle_beads %></td>
+        <td><%= family_planning_report.acceptors_auto_observation %></td>
+        <td><%= family_planning_report.acceptors_tubal_ligation %></td>
+        <td><%= family_planning_report.acceptors_vasectomy %></td>
+        <td><%= family_planning_report.references %></td>
+        <td><%= link_to 'Show', family_planning_report %></td>
+        <td><%= link_to 'Edit', edit_family_planning_report_path(family_planning_report) %></td>
+        <td><%= link_to 'Destroy', family_planning_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Family planning report', new_family_planning_report_path %>

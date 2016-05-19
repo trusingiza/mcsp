@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Mopdd Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Periode</th>
+      <th>Malaria confirmed</th>
+      <th>Malaria confirmed notified</th>
+      <th>Malaria index investigated</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mopdd_reports.each do |mopdd_report| %>
+      <tr>
+        <td><%= mopdd_report.periode %></td>
+        <td><%= mopdd_report.malaria_confirmed %></td>
+        <td><%= mopdd_report.malaria_confirmed_notified %></td>
+        <td><%= mopdd_report.malaria_index_investigated %></td>
+        <td><%= link_to 'Show', mopdd_report %></td>
+        <td><%= link_to 'Edit', edit_mopdd_report_path(mopdd_report) %></td>
+        <td><%= link_to 'Destroy', mopdd_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mopdd report', new_mopdd_report_path %>

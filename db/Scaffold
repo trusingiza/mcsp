@@ -1,0 +1,47 @@
+// Gender Report
+******************************************************
+
+rails g scaffold GenderReport meeting_date:date meeting_venue:string hf_targeted:integer hf_participated:integer admin_sector_targeted:integer admin_sector_participated:integer admin_cell_targeted:integer admin_cell_participated:
+ male_10_14:integer female_10_14:integer male_15_19:integer female_15_19:integer male_20_24:integer female_20_24:integer male_25_29:integer female_25_29:integer male_30_49:integer female_30_49:integer male_50_above:integer female_50_above:integer references:district
+
+// BC Report
+*********************************************************
+rails g scaffold BccReport sensitization_date:date Venue:string male_fp_rh:integer female_fp_rh:integer male_mnh:integer
+female_mnh:integer male_malaria:integer female_malaria:integer references:district
+
+Active Admin ///
+ :sensitization_date, :Venue,:male_fp_rh, :female_fp_rh, :male_mnh, :female_mnh, :male_malaria, :female_malaria 
+
+ // HMIS Report
+ *******************************************************************
+ periode:date IMCI_diarrhea_dehydratation:integer IMCI_diarrhea_evident_dehydratation:integer IMCI_diarrhea_no_dehydratation:integer IMCI_Peneumonie:integer GBV_symptoms_sexual_new_F:integer GBV_symptoms_sexual_new_M:integer GBV_symptoms_Physical_new_F:integer GBV_symptoms_Physical_new_M:integer ANC_new:integer ANC_trim_1_visit:integer ANC_4th__visit:integer ANC_new_fullCource:integer Deliveries_total:integer
+Deliveries_16_19:integer Deliveries_under_15:integer Births_live:integer Births_live_weight_2_5kg:integer
+Premature_weight_2_5kg_22_73Weeks:integer Newborns_breastfed_1hour:integer Newborns_not_cry:integer
+Newborns_not_cry_resuscited:integer Newborns_not_cry_resuscited_successfully:integer
+PNC_new:integer PNC_standard_visit_1_3days:integer FP_new:integer FP_active_end_month:integer
+Iron_sulfate_folic:integer Micropostal:integer Low_birth_weight_KMC:integer Fistula_repair:integer
+Malaria_confirmed_under_5_F:integer Malaria_confirmed_under_5_M:integer Malaria_confirmed_over_5_F:integer
+Malaria_confirmed_over_5_M:integer Malaria_conf_minor_digest_sympt_under_5_F:integer
+Malaria_conf_minor_digest_sympt_under_5_M:integer Malaria_conf_minor_digest_sympt_over_5_F:integer
+Malaria_conf_minor_digest_sympt_over_5_M:integer Malaria_simple_IMCI_under_5_F:integer
+Malaria_simple_IMCI_under_5_M:integer Malaria_simple_IMCI_over_5_F:integer Malaria_simple_IMCI_over_5_M:integer
+Malaria_simple_pregnancy:integer Malaria_minor_digest_sympt_pregnancy:integer BloodSmears_plasmodium_positives:integer
+RapidDiagnostic_tests_malaria_positives:integer RapidDiagnostic_tests_malaria_negatives:integer references:facility
+
+
+// SISCOM Report 
+*****************************************************************************************
+
+rails g scaffold SiscomReport Periode:date Diarrhea2_59months:integer Pneumonia2_59months:integer Accouchement_domicile:integer Micropostal:integer Active_CHWs:integer Total_CHWs:integer Total_red_alert:integer
+Responce_red_alert:integer RDT_positive:integer RDT_negative:integer Malaria_6_59months_treated_before_24h:integer Malaria_6_59months_treated_after_24h:integer
+
+
+// MOPDD
+**************************************************************************88888
+
+rails g scaffold MopddReport periode:date malaria_confirmed:integer malaria_confirmed_notified:integer malaria_index_investigated:integer
+
+
+
+
+

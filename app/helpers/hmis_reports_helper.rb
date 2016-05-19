@@ -1,0 +1,2 @@
+module HmisReportsHelper
+end

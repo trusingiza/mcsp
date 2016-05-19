@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing District Hospitals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>References</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @district_hospitals.each do |district_hospital| %>
+      <tr>
+        <td><%= district_hospital.name %></td>
+        <td><%= district_hospital.references %></td>
+        <td><%= link_to 'Show', district_hospital %></td>
+        <td><%= link_to 'Edit', edit_district_hospital_path(district_hospital) %></td>
+        <td><%= link_to 'Destroy', district_hospital, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New District hospital', new_district_hospital_path %>

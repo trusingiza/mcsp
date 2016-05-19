@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meeting_date: 2016-03-29
+  meeting_venue: MyString
+  hf_targeted: 1
+  hf_participated: 1
+  admin_sector_targeted: 1
+  admin_sector_participated: 1
+  admin_cell_targeted: 1
+  admin_cell_participated: 1
+  male_10_14: 1
+  female_10_14: 1
+  male_15_19: 1
+  female_15_19: 1
+  male_20_24: 1
+  female_20_24: 1
+  male_25_29: 1
+  female_25_29: 1
+  male_30_49: 1
+  female_30_49: 1
+  male_50_above: 1
+  female_50_above: 1
+  references: 
+
+two:
+  meeting_date: 2016-03-29
+  meeting_venue: MyString
+  hf_targeted: 1
+  hf_participated: 1
+  admin_sector_targeted: 1
+  admin_sector_participated: 1
+  admin_cell_targeted: 1
+  admin_cell_participated: 1
+  male_10_14: 1
+  female_10_14: 1
+  male_15_19: 1
+  female_15_19: 1
+  male_20_24: 1
+  female_20_24: 1
+  male_25_29: 1
+  female_25_29: 1
+  male_30_49: 1
+  female_30_49: 1
+  male_50_above: 1
+  female_50_above: 1
+  references: 

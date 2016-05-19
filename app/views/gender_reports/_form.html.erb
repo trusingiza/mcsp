@@ -1,0 +1,101 @@
+<%= form_for(@gender_report) do |f| %>
+  <% if @gender_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gender_report.errors.count, "error") %> prohibited this gender_report from being saved:</h2>
+
+      <ul>
+      <% @gender_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :meeting_date %><br>
+    <%= f.date_select :meeting_date %>
+  </div>
+  <div class="field">
+    <%= f.label :meeting_venue %><br>
+    <%= f.text_field :meeting_venue %>
+  </div>
+  <div class="field">
+    <%= f.label :hf_targeted %><br>
+    <%= f.number_field :hf_targeted %>
+  </div>
+  <div class="field">
+    <%= f.label :hf_participated %><br>
+    <%= f.number_field :hf_participated %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_sector_targeted %><br>
+    <%= f.number_field :admin_sector_targeted %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_sector_participated %><br>
+    <%= f.number_field :admin_sector_participated %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_cell_targeted %><br>
+    <%= f.number_field :admin_cell_targeted %>
+  </div>
+  <div class="field">
+    <%= f.label :admin_cell_participated %><br>
+    <%= f.number_field :admin_cell_participated %>
+  </div>
+  <div class="field">
+    <%= f.label :male_10_14 %><br>
+    <%= f.number_field :male_10_14 %>
+  </div>
+  <div class="field">
+    <%= f.label :female_10_14 %><br>
+    <%= f.number_field :female_10_14 %>
+  </div>
+  <div class="field">
+    <%= f.label :male_15_19 %><br>
+    <%= f.number_field :male_15_19 %>
+  </div>
+  <div class="field">
+    <%= f.label :female_15_19 %><br>
+    <%= f.number_field :female_15_19 %>
+  </div>
+  <div class="field">
+    <%= f.label :male_20_24 %><br>
+    <%= f.number_field :male_20_24 %>
+  </div>
+  <div class="field">
+    <%= f.label :female_20_24 %><br>
+    <%= f.number_field :female_20_24 %>
+  </div>
+  <div class="field">
+    <%= f.label :male_25_29 %><br>
+    <%= f.number_field :male_25_29 %>
+  </div>
+  <div class="field">
+    <%= f.label :female_25_29 %><br>
+    <%= f.number_field :female_25_29 %>
+  </div>
+  <div class="field">
+    <%= f.label :male_30_49 %><br>
+    <%= f.number_field :male_30_49 %>
+  </div>
+  <div class="field">
+    <%= f.label :female_30_49 %><br>
+    <%= f.number_field :female_30_49 %>
+  </div>
+  <div class="field">
+    <%= f.label :male_50_above %><br>
+    <%= f.number_field :male_50_above %>
+  </div>
+  <div class="field">
+    <%= f.label :female_50_above %><br>
+    <%= f.number_field :female_50_above %>
+  </div>
+  <div class="field">
+    <%= f.label :references %><br>
+    <%= f.text_field :references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

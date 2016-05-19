@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  organizer: MyString
+  startdate: 2016-05-19
+  enddate: 2016-05-19
+  name_surname: MyString
+  gender: MyString
+  provenance_district: MyString
+  place_of_work: MyString
+  position: MyString
+  qualification: MyString
+  telephone: MyString
+  email: MyString
+  duration_days: 1
+  type_name_of_training: MyString
+  pre_test: 1.5
+  post_test: 1.5
+  date_of_post_training_follow_up: 2016-05-19
+  technical_area: MyString
+
+two:
+  location: MyString
+  organizer: MyString
+  startdate: 2016-05-19
+  enddate: 2016-05-19
+  name_surname: MyString
+  gender: MyString
+  provenance_district: MyString
+  place_of_work: MyString
+  position: MyString
+  qualification: MyString
+  telephone: MyString
+  email: MyString
+  duration_days: 1
+  type_name_of_training: MyString
+  pre_test: 1.5
+  post_test: 1.5
+  date_of_post_training_follow_up: 2016-05-19
+  technical_area: MyString

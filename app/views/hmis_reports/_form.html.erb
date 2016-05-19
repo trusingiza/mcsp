@@ -1,0 +1,213 @@
+<%= form_for(@hmis_report) do |f| %>
+  <% if @hmis_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hmis_report.errors.count, "error") %> prohibited this hmis_report from being saved:</h2>
+
+      <ul>
+      <% @hmis_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :periode %><br>
+    <%= f.date_select :periode %>
+  </div>
+  <div class="field">
+    <%= f.label :IMCI_diarrhea_dehydratation %><br>
+    <%= f.number_field :IMCI_diarrhea_dehydratation %>
+  </div>
+  <div class="field">
+    <%= f.label :IMCI_diarrhea_evident_dehydratation %><br>
+    <%= f.number_field :IMCI_diarrhea_evident_dehydratation %>
+  </div>
+  <div class="field">
+    <%= f.label :IMCI_diarrhea_no_dehydratation %><br>
+    <%= f.number_field :IMCI_diarrhea_no_dehydratation %>
+  </div>
+  <div class="field">
+    <%= f.label :IMCI_Peneumonie %><br>
+    <%= f.number_field :IMCI_Peneumonie %>
+  </div>
+  <div class="field">
+    <%= f.label :GBV_symptoms_sexual_new_F %><br>
+    <%= f.number_field :GBV_symptoms_sexual_new_F %>
+  </div>
+  <div class="field">
+    <%= f.label :GBV_symptoms_sexual_new_M %><br>
+    <%= f.number_field :GBV_symptoms_sexual_new_M %>
+  </div>
+  <div class="field">
+    <%= f.label :GBV_symptoms_Physical_new_F %><br>
+    <%= f.number_field :GBV_symptoms_Physical_new_F %>
+  </div>
+  <div class="field">
+    <%= f.label :GBV_symptoms_Physical_new_M %><br>
+    <%= f.number_field :GBV_symptoms_Physical_new_M %>
+  </div>
+  <div class="field">
+    <%= f.label :ANC_new %><br>
+    <%= f.number_field :ANC_new %>
+  </div>
+  <div class="field">
+    <%= f.label :ANC_trim_1_visit %><br>
+    <%= f.number_field :ANC_trim_1_visit %>
+  </div>
+  <div class="field">
+    <%= f.label :ANC_4th__visit %><br>
+    <%= f.number_field :ANC_4th__visit %>
+  </div>
+  <div class="field">
+    <%= f.label :ANC_new_fullCource %><br>
+    <%= f.number_field :ANC_new_fullCource %>
+  </div>
+  <div class="field">
+    <%= f.label :Deliveries_total %><br>
+    <%= f.number_field :Deliveries_total %>
+  </div>
+  <div class="field">
+    <%= f.label :Deliveries_16_19 %><br>
+    <%= f.number_field :Deliveries_16_19 %>
+  </div>
+  <div class="field">
+    <%= f.label :Deliveries_under_15 %><br>
+    <%= f.number_field :Deliveries_under_15 %>
+  </div>
+  <div class="field">
+    <%= f.label :Births_live %><br>
+    <%= f.number_field :Births_live %>
+  </div>
+  <div class="field">
+    <%= f.label :Births_live_weight_2_5kg %><br>
+    <%= f.number_field :Births_live_weight_2_5kg %>
+  </div>
+  <div class="field">
+    <%= f.label :Premature_weight_2_5kg_22_73Weeks %><br>
+    <%= f.number_field :Premature_weight_2_5kg_22_73Weeks %>
+  </div>
+  <div class="field">
+    <%= f.label :Newborns_breastfed_1hour %><br>
+    <%= f.number_field :Newborns_breastfed_1hour %>
+  </div>
+  <div class="field">
+    <%= f.label :Newborns_not_cry %><br>
+    <%= f.number_field :Newborns_not_cry %>
+  </div>
+  <div class="field">
+    <%= f.label :Newborns_not_cry_resuscited %><br>
+    <%= f.number_field :Newborns_not_cry_resuscited %>
+  </div>
+  <div class="field">
+    <%= f.label :Newborns_not_cry_resuscited_successfully %><br>
+    <%= f.number_field :Newborns_not_cry_resuscited_successfully %>
+  </div>
+  <div class="field">
+    <%= f.label :PNC_new %><br>
+    <%= f.number_field :PNC_new %>
+  </div>
+  <div class="field">
+    <%= f.label :PNC_standard_visit_1_3days %><br>
+    <%= f.number_field :PNC_standard_visit_1_3days %>
+  </div>
+  <div class="field">
+    <%= f.label :FP_new %><br>
+    <%= f.number_field :FP_new %>
+  </div>
+  <div class="field">
+    <%= f.label :FP_active_end_month %><br>
+    <%= f.number_field :FP_active_end_month %>
+  </div>
+  <div class="field">
+    <%= f.label :Iron_sulfate_folic %><br>
+    <%= f.number_field :Iron_sulfate_folic %>
+  </div>
+  <div class="field">
+    <%= f.label :Micropostal %><br>
+    <%= f.number_field :Micropostal %>
+  </div>
+  <div class="field">
+    <%= f.label :Low_birth_weight_KMC %><br>
+    <%= f.number_field :Low_birth_weight_KMC %>
+  </div>
+  <div class="field">
+    <%= f.label :Fistula_repair %><br>
+    <%= f.number_field :Fistula_repair %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_confirmed_under_5_F %><br>
+    <%= f.number_field :Malaria_confirmed_under_5_F %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_confirmed_under_5_M %><br>
+    <%= f.number_field :Malaria_confirmed_under_5_M %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_confirmed_over_5_F %><br>
+    <%= f.number_field :Malaria_confirmed_over_5_F %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_confirmed_over_5_M %><br>
+    <%= f.number_field :Malaria_confirmed_over_5_M %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_conf_minor_digest_sympt_under_5_F %><br>
+    <%= f.number_field :Malaria_conf_minor_digest_sympt_under_5_F %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_conf_minor_digest_sympt_under_5_M %><br>
+    <%= f.number_field :Malaria_conf_minor_digest_sympt_under_5_M %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_conf_minor_digest_sympt_over_5_F %><br>
+    <%= f.number_field :Malaria_conf_minor_digest_sympt_over_5_F %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_conf_minor_digest_sympt_over_5_M %><br>
+    <%= f.number_field :Malaria_conf_minor_digest_sympt_over_5_M %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_simple_IMCI_under_5_F %><br>
+    <%= f.number_field :Malaria_simple_IMCI_under_5_F %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_simple_IMCI_under_5_M %><br>
+    <%= f.number_field :Malaria_simple_IMCI_under_5_M %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_simple_IMCI_over_5_F %><br>
+    <%= f.number_field :Malaria_simple_IMCI_over_5_F %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_simple_IMCI_over_5_M %><br>
+    <%= f.number_field :Malaria_simple_IMCI_over_5_M %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_simple_pregnancy %><br>
+    <%= f.number_field :Malaria_simple_pregnancy %>
+  </div>
+  <div class="field">
+    <%= f.label :Malaria_minor_digest_sympt_pregnancy %><br>
+    <%= f.number_field :Malaria_minor_digest_sympt_pregnancy %>
+  </div>
+  <div class="field">
+    <%= f.label :BloodSmears_plasmodium_positives %><br>
+    <%= f.number_field :BloodSmears_plasmodium_positives %>
+  </div>
+  <div class="field">
+    <%= f.label :RapidDiagnostic_tests_malaria_positives %><br>
+    <%= f.number_field :RapidDiagnostic_tests_malaria_positives %>
+  </div>
+  <div class="field">
+    <%= f.label :RapidDiagnostic_tests_malaria_negatives %><br>
+    <%= f.number_field :RapidDiagnostic_tests_malaria_negatives %>
+  </div>
+  <div class="field">
+    <%= f.label :references %><br>
+    <%= f.text_field :references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

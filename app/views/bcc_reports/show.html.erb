@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sensitization date:</strong>
+  <%= @bcc_report.sensitization_date %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @bcc_report.Venue %>
+</p>
+
+<p>
+  <strong>Male fp rh:</strong>
+  <%= @bcc_report.male_fp_rh %>
+</p>
+
+<p>
+  <strong>Female fp rh:</strong>
+  <%= @bcc_report.female_fp_rh %>
+</p>
+
+<p>
+  <strong>Male mnh:</strong>
+  <%= @bcc_report.male_mnh %>
+</p>
+
+<p>
+  <strong>Female mnh:</strong>
+  <%= @bcc_report.female_mnh %>
+</p>
+
+<p>
+  <strong>Male malaria:</strong>
+  <%= @bcc_report.male_malaria %>
+</p>
+
+<p>
+  <strong>Female malaria:</strong>
+  <%= @bcc_report.female_malaria %>
+</p>
+
+<p>
+  <strong>References:</strong>
+  <%= @bcc_report.references %>
+</p>
+
+<%= link_to 'Edit', edit_bcc_report_path(@bcc_report) %> |
+<%= link_to 'Back', bcc_reports_path %>

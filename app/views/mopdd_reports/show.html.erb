@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Periode:</strong>
+  <%= @mopdd_report.periode %>
+</p>
+
+<p>
+  <strong>Malaria confirmed:</strong>
+  <%= @mopdd_report.malaria_confirmed %>
+</p>
+
+<p>
+  <strong>Malaria confirmed notified:</strong>
+  <%= @mopdd_report.malaria_confirmed_notified %>
+</p>
+
+<p>
+  <strong>Malaria index investigated:</strong>
+  <%= @mopdd_report.malaria_index_investigated %>
+</p>
+
+<%= link_to 'Edit', edit_mopdd_report_path(@mopdd_report) %> |
+<%= link_to 'Back', mopdd_reports_path %>

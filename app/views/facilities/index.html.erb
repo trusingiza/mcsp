@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Facilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fosa code</th>
+      <th>Facility name</th>
+      <th>Location</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facilities.each do |facility| %>
+      <tr>
+        <td><%= facility.fosa_code %></td>
+        <td><%= facility.facility_name %></td>
+        <td><%= facility.location %></td>
+        <td><%= link_to 'Show', facility %></td>
+        <td><%= link_to 'Edit', edit_facility_path(facility) %></td>
+        <td><%= link_to 'Destroy', facility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Facility', new_facility_path %>

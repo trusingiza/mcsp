@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sensitization_date: 2016-04-01
+  Venue: MyString
+  male_fp_rh: 1
+  female_fp_rh: 1
+  male_mnh: 1
+  female_mnh: 1
+  male_malaria: 1
+  female_malaria: 1
+  references: 
+
+two:
+  sensitization_date: 2016-04-01
+  Venue: MyString
+  male_fp_rh: 1
+  female_fp_rh: 1
+  male_mnh: 1
+  female_mnh: 1
+  male_malaria: 1
+  female_malaria: 1
+  references: 

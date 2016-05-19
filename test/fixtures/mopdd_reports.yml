@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  periode: 2016-04-04
+  malaria_confirmed: 1
+  malaria_confirmed_notified: 1
+  malaria_index_investigated: 1
+
+two:
+  periode: 2016-04-04
+  malaria_confirmed: 1
+  malaria_confirmed_notified: 1
+  malaria_index_investigated: 1

@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Periode:</strong>
+  <%= @siscom_report.Periode %>
+</p>
+
+<p>
+  <strong>Diarrhea2 59months:</strong>
+  <%= @siscom_report.Diarrhea2_59months %>
+</p>
+
+<p>
+  <strong>Pneumonia2 59months:</strong>
+  <%= @siscom_report.Pneumonia2_59months %>
+</p>
+
+<p>
+  <strong>Accouchement domicile:</strong>
+  <%= @siscom_report.Accouchement_domicile %>
+</p>
+
+<p>
+  <strong>Micropostal:</strong>
+  <%= @siscom_report.Micropostal %>
+</p>
+
+<p>
+  <strong>Active chws:</strong>
+  <%= @siscom_report.Active_CHWs %>
+</p>
+
+<p>
+  <strong>Total chws:</strong>
+  <%= @siscom_report.Total_CHWs %>
+</p>
+
+<p>
+  <strong>Total red alert:</strong>
+  <%= @siscom_report.Total_red_alert %>
+</p>
+
+<p>
+  <strong>Responce red alert:</strong>
+  <%= @siscom_report.Responce_red_alert %>
+</p>
+
+<p>
+  <strong>Rdt positive:</strong>
+  <%= @siscom_report.RDT_positive %>
+</p>
+
+<p>
+  <strong>Rdt negative:</strong>
+  <%= @siscom_report.RDT_negative %>
+</p>
+
+<p>
+  <strong>Malaria 6 59months treated before 24h:</strong>
+  <%= @siscom_report.Malaria_6_59months_treated_before_24h %>
+</p>
+
+<p>
+  <strong>Malaria 6 59months treated after 24h:</strong>
+  <%= @siscom_report.Malaria_6_59months_treated_after_24h %>
+</p>
+
+<%= link_to 'Edit', edit_siscom_report_path(@siscom_report) %> |
+<%= link_to 'Back', siscom_reports_path %>

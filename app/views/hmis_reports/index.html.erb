@@ -1,0 +1,123 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hmis Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Periode</th>
+      <th>Imci diarrhea dehydratation</th>
+      <th>Imci diarrhea evident dehydratation</th>
+      <th>Imci diarrhea no dehydratation</th>
+      <th>Imci peneumonie</th>
+      <th>Gbv symptoms sexual new f</th>
+      <th>Gbv symptoms sexual new m</th>
+      <th>Gbv symptoms physical new f</th>
+      <th>Gbv symptoms physical new m</th>
+      <th>Anc new</th>
+      <th>Anc trim 1 visit</th>
+      <th>Anc 4th  visit</th>
+      <th>Anc new fullcource</th>
+      <th>Deliveries total</th>
+      <th>Deliveries 16 19</th>
+      <th>Deliveries under 15</th>
+      <th>Births live</th>
+      <th>Births live weight 2 5kg</th>
+      <th>Premature weight 2 5kg 22 73weeks</th>
+      <th>Newborns breastfed 1hour</th>
+      <th>Newborns not cry</th>
+      <th>Newborns not cry resuscited</th>
+      <th>Newborns not cry resuscited successfully</th>
+      <th>Pnc new</th>
+      <th>Pnc standard visit 1 3days</th>
+      <th>Fp new</th>
+      <th>Fp active end month</th>
+      <th>Iron sulfate folic</th>
+      <th>Micropostal</th>
+      <th>Low birth weight kmc</th>
+      <th>Fistula repair</th>
+      <th>Malaria confirmed under 5 f</th>
+      <th>Malaria confirmed under 5 m</th>
+      <th>Malaria confirmed over 5 f</th>
+      <th>Malaria confirmed over 5 m</th>
+      <th>Malaria conf minor digest sympt under 5 f</th>
+      <th>Malaria conf minor digest sympt under 5 m</th>
+      <th>Malaria conf minor digest sympt over 5 f</th>
+      <th>Malaria conf minor digest sympt over 5 m</th>
+      <th>Malaria simple imci under 5 f</th>
+      <th>Malaria simple imci under 5 m</th>
+      <th>Malaria simple imci over 5 f</th>
+      <th>Malaria simple imci over 5 m</th>
+      <th>Malaria simple pregnancy</th>
+      <th>Malaria minor digest sympt pregnancy</th>
+      <th>Bloodsmears plasmodium positives</th>
+      <th>Rapiddiagnostic tests malaria positives</th>
+      <th>Rapiddiagnostic tests malaria negatives</th>
+      <th>References</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hmis_reports.each do |hmis_report| %>
+      <tr>
+        <td><%= hmis_report.periode %></td>
+        <td><%= hmis_report.IMCI_diarrhea_dehydratation %></td>
+        <td><%= hmis_report.IMCI_diarrhea_evident_dehydratation %></td>
+        <td><%= hmis_report.IMCI_diarrhea_no_dehydratation %></td>
+        <td><%= hmis_report.IMCI_Peneumonie %></td>
+        <td><%= hmis_report.GBV_symptoms_sexual_new_F %></td>
+        <td><%= hmis_report.GBV_symptoms_sexual_new_M %></td>
+        <td><%= hmis_report.GBV_symptoms_Physical_new_F %></td>
+        <td><%= hmis_report.GBV_symptoms_Physical_new_M %></td>
+        <td><%= hmis_report.ANC_new %></td>
+        <td><%= hmis_report.ANC_trim_1_visit %></td>
+        <td><%= hmis_report.ANC_4th__visit %></td>
+        <td><%= hmis_report.ANC_new_fullCource %></td>
+        <td><%= hmis_report.Deliveries_total %></td>
+        <td><%= hmis_report.Deliveries_16_19 %></td>
+        <td><%= hmis_report.Deliveries_under_15 %></td>
+        <td><%= hmis_report.Births_live %></td>
+        <td><%= hmis_report.Births_live_weight_2_5kg %></td>
+        <td><%= hmis_report.Premature_weight_2_5kg_22_73Weeks %></td>
+        <td><%= hmis_report.Newborns_breastfed_1hour %></td>
+        <td><%= hmis_report.Newborns_not_cry %></td>
+        <td><%= hmis_report.Newborns_not_cry_resuscited %></td>
+        <td><%= hmis_report.Newborns_not_cry_resuscited_successfully %></td>
+        <td><%= hmis_report.PNC_new %></td>
+        <td><%= hmis_report.PNC_standard_visit_1_3days %></td>
+        <td><%= hmis_report.FP_new %></td>
+        <td><%= hmis_report.FP_active_end_month %></td>
+        <td><%= hmis_report.Iron_sulfate_folic %></td>
+        <td><%= hmis_report.Micropostal %></td>
+        <td><%= hmis_report.Low_birth_weight_KMC %></td>
+        <td><%= hmis_report.Fistula_repair %></td>
+        <td><%= hmis_report.Malaria_confirmed_under_5_F %></td>
+        <td><%= hmis_report.Malaria_confirmed_under_5_M %></td>
+        <td><%= hmis_report.Malaria_confirmed_over_5_F %></td>
+        <td><%= hmis_report.Malaria_confirmed_over_5_M %></td>
+        <td><%= hmis_report.Malaria_conf_minor_digest_sympt_under_5_F %></td>
+        <td><%= hmis_report.Malaria_conf_minor_digest_sympt_under_5_M %></td>
+        <td><%= hmis_report.Malaria_conf_minor_digest_sympt_over_5_F %></td>
+        <td><%= hmis_report.Malaria_conf_minor_digest_sympt_over_5_M %></td>
+        <td><%= hmis_report.Malaria_simple_IMCI_under_5_F %></td>
+        <td><%= hmis_report.Malaria_simple_IMCI_under_5_M %></td>
+        <td><%= hmis_report.Malaria_simple_IMCI_over_5_F %></td>
+        <td><%= hmis_report.Malaria_simple_IMCI_over_5_M %></td>
+        <td><%= hmis_report.Malaria_simple_pregnancy %></td>
+        <td><%= hmis_report.Malaria_minor_digest_sympt_pregnancy %></td>
+        <td><%= hmis_report.BloodSmears_plasmodium_positives %></td>
+        <td><%= hmis_report.RapidDiagnostic_tests_malaria_positives %></td>
+        <td><%= hmis_report.RapidDiagnostic_tests_malaria_negatives %></td>
+        <td><%= hmis_report.references %></td>
+        <td><%= link_to 'Show', hmis_report %></td>
+        <td><%= link_to 'Edit', edit_hmis_report_path(hmis_report) %></td>
+        <td><%= link_to 'Destroy', hmis_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hmis report', new_hmis_report_path %>

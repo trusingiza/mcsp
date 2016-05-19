@@ -1,0 +1,28 @@
+<%= simple_form_for(@training) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :location %>
+    <%= f.input :organizer %>
+    <%= f.input :startdate %>
+    <%= f.input :enddate %>
+    <%= f.input :name_surname %>
+    <%= f.input :gender %>
+    <%= f.input :provenance_district %>
+    <%= f.input :place_of_work %>
+    <%= f.input :position %>
+    <%= f.input :qualification %>
+    <%= f.input :telephone %>
+    <%= f.input :email %>
+    <%= f.input :duration_days %>
+    <%= f.input :type_name_of_training %>
+    <%= f.input :pre_test %>
+    <%= f.input :post_test %>
+    <%= f.input :date_of_post_training_follow_up %>
+    <%= f.input :technical_area %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

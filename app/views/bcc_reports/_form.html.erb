@@ -1,0 +1,53 @@
+<%= form_for(@bcc_report) do |f| %>
+  <% if @bcc_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bcc_report.errors.count, "error") %> prohibited this bcc_report from being saved:</h2>
+
+      <ul>
+      <% @bcc_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sensitization_date %><br>
+    <%= f.date_select :sensitization_date %>
+  </div>
+  <div class="field">
+    <%= f.label :Venue %><br>
+    <%= f.text_field :Venue %>
+  </div>
+  <div class="field">
+    <%= f.label :male_fp_rh %><br>
+    <%= f.number_field :male_fp_rh %>
+  </div>
+  <div class="field">
+    <%= f.label :female_fp_rh %><br>
+    <%= f.number_field :female_fp_rh %>
+  </div>
+  <div class="field">
+    <%= f.label :male_mnh %><br>
+    <%= f.number_field :male_mnh %>
+  </div>
+  <div class="field">
+    <%= f.label :female_mnh %><br>
+    <%= f.number_field :female_mnh %>
+  </div>
+  <div class="field">
+    <%= f.label :male_malaria %><br>
+    <%= f.number_field :male_malaria %>
+  </div>
+  <div class="field">
+    <%= f.label :female_malaria %><br>
+    <%= f.number_field :female_malaria %>
+  </div>
+  <div class="field">
+    <%= f.label :references %><br>
+    <%= f.text_field :references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

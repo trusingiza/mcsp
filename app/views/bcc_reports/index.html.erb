@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bcc Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sensitization date</th>
+      <th>Venue</th>
+      <th>Male fp rh</th>
+      <th>Female fp rh</th>
+      <th>Male mnh</th>
+      <th>Female mnh</th>
+      <th>Male malaria</th>
+      <th>Female malaria</th>
+      <th>References</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bcc_reports.each do |bcc_report| %>
+      <tr>
+        <td><%= bcc_report.sensitization_date %></td>
+        <td><%= bcc_report.Venue %></td>
+        <td><%= bcc_report.male_fp_rh %></td>
+        <td><%= bcc_report.female_fp_rh %></td>
+        <td><%= bcc_report.male_mnh %></td>
+        <td><%= bcc_report.female_mnh %></td>
+        <td><%= bcc_report.male_malaria %></td>
+        <td><%= bcc_report.female_malaria %></td>
+        <td><%= bcc_report.references %></td>
+        <td><%= link_to 'Show', bcc_report %></td>
+        <td><%= link_to 'Edit', edit_bcc_report_path(bcc_report) %></td>
+        <td><%= link_to 'Destroy', bcc_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bcc report', new_bcc_report_path %>

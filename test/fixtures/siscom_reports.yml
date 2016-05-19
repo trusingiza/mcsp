@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Periode: 2016-04-04
+  Diarrhea2_59months: 1
+  Pneumonia2_59months: 1
+  Accouchement_domicile: 1
+  Micropostal: 1
+  Active_CHWs: 1
+  Total_CHWs: 1
+  Total_red_alert: 1
+  Responce_red_alert: 1
+  RDT_positive: 1
+  RDT_negative: 1
+  Malaria_6_59months_treated_before_24h: 1
+  Malaria_6_59months_treated_after_24h: 1
+
+two:
+  Periode: 2016-04-04
+  Diarrhea2_59months: 1
+  Pneumonia2_59months: 1
+  Accouchement_domicile: 1
+  Micropostal: 1
+  Active_CHWs: 1
+  Total_CHWs: 1
+  Total_red_alert: 1
+  Responce_red_alert: 1
+  RDT_positive: 1
+  RDT_negative: 1
+  Malaria_6_59months_treated_before_24h: 1
+  Malaria_6_59months_treated_after_24h: 1

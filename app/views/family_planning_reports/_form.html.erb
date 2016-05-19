@@ -1,0 +1,141 @@
+<%= form_for(@family_planning_report) do |f| %>
+  <% if @family_planning_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@family_planning_report.errors.count, "error") %> prohibited this family_planning_report from being saved:</h2>
+
+      <ul>
+      <% @family_planning_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :report_period %><br>
+    <%= f.date_select :report_period %>
+  </div>
+  <div class="field">
+    <%= f.label :delivery_1 %><br>
+    <%= f.number_field :delivery_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :delivery_2 %><br>
+    <%= f.number_field :delivery_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :neonantology_male %><br>
+    <%= f.number_field :neonantology_male %>
+  </div>
+  <div class="field">
+    <%= f.label :neonantology_female %><br>
+    <%= f.number_field :neonantology_female %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_oral_contraceptive %><br>
+    <%= f.number_field :anc_oral_contraceptive %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_injectable %><br>
+    <%= f.number_field :anc_injectable %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_implants %><br>
+    <%= f.number_field :anc_implants %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_iud %><br>
+    <%= f.number_field :anc_iud %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_male_condom %><br>
+    <%= f.number_field :anc_male_condom %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_female_condom %><br>
+    <%= f.number_field :anc_female_condom %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_barriers %><br>
+    <%= f.number_field :anc_barriers %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_cycle_beads %><br>
+    <%= f.number_field :anc_cycle_beads %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_auto_observation %><br>
+    <%= f.number_field :anc_auto_observation %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_tubal_ligation %><br>
+    <%= f.number_field :anc_tubal_ligation %>
+  </div>
+  <div class="field">
+    <%= f.label :anc_vasectomy %><br>
+    <%= f.number_field :anc_vasectomy %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_1 %><br>
+    <%= f.number_field :acceptors_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_2 %><br>
+    <%= f.number_field :acceptors_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_oral_contraceptive %><br>
+    <%= f.number_field :acceptors_oral_contraceptive %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_injectable %><br>
+    <%= f.number_field :acceptors_injectable %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_implants %><br>
+    <%= f.number_field :acceptors_implants %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_iud %><br>
+    <%= f.number_field :acceptors_iud %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_male_condom %><br>
+    <%= f.number_field :acceptors_male_condom %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_female %><br>
+    <%= f.text_field :acceptors_female %>
+  </div>
+  <div class="field">
+    <%= f.label :condom %><br>
+    <%= f.number_field :condom %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_other_barriers %><br>
+    <%= f.number_field :acceptors_other_barriers %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_cycle_beads %><br>
+    <%= f.number_field :acceptors_cycle_beads %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_auto_observation %><br>
+    <%= f.number_field :acceptors_auto_observation %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_tubal_ligation %><br>
+    <%= f.number_field :acceptors_tubal_ligation %>
+  </div>
+  <div class="field">
+    <%= f.label :acceptors_vasectomy %><br>
+    <%= f.number_field :acceptors_vasectomy %>
+  </div>
+  <div class="field">
+    <%= f.label :references %><br>
+    <%= f.text_field :references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  report_period: 2016-03-28
+  delivery_1: 1
+  delivery_2: 1
+  neonantology_male: 1
+  neonantology_female: 1
+  anc_oral_contraceptive: 1
+  anc_injectable: 1
+  anc_implants: 1
+  anc_iud: 1
+  anc_male_condom: 1
+  anc_female_condom: 1
+  anc_barriers: 1
+  anc_cycle_beads: 1
+  anc_auto_observation: 1
+  anc_tubal_ligation: 1
+  anc_vasectomy: 1
+  acceptors_1: 1
+  acceptors_2: 1
+  acceptors_oral_contraceptive: 1
+  acceptors_injectable: 1
+  acceptors_implants: 1
+  acceptors_iud: 1
+  acceptors_male_condom: 1
+  acceptors_female: MyString
+  condom: 1
+  acceptors_other_barriers: 1
+  acceptors_cycle_beads: 1
+  acceptors_auto_observation: 1
+  acceptors_tubal_ligation: 1
+  acceptors_vasectomy: 1
+  references: 
+
+two:
+  report_period: 2016-03-28
+  delivery_1: 1
+  delivery_2: 1
+  neonantology_male: 1
+  neonantology_female: 1
+  anc_oral_contraceptive: 1
+  anc_injectable: 1
+  anc_implants: 1
+  anc_iud: 1
+  anc_male_condom: 1
+  anc_female_condom: 1
+  anc_barriers: 1
+  anc_cycle_beads: 1
+  anc_auto_observation: 1
+  anc_tubal_ligation: 1
+  anc_vasectomy: 1
+  acceptors_1: 1
+  acceptors_2: 1
+  acceptors_oral_contraceptive: 1
+  acceptors_injectable: 1
+  acceptors_implants: 1
+  acceptors_iud: 1
+  acceptors_male_condom: 1
+  acceptors_female: MyString
+  condom: 1
+  acceptors_other_barriers: 1
+  acceptors_cycle_beads: 1
+  acceptors_auto_observation: 1
+  acceptors_tubal_ligation: 1
+  acceptors_vasectomy: 1
+  references: 

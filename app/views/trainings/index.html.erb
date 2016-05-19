@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Trainings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Organizer</th>
+      <th>Startdate</th>
+      <th>Enddate</th>
+      <th>Name surname</th>
+      <th>Gender</th>
+      <th>Provenance district</th>
+      <th>Place of work</th>
+      <th>Position</th>
+      <th>Qualification</th>
+      <th>Telephone</th>
+      <th>Email</th>
+      <th>Duration days</th>
+      <th>Type name of training</th>
+      <th>Pre test</th>
+      <th>Post test</th>
+      <th>Date of post training follow up</th>
+      <th>Technical area</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trainings.each do |training| %>
+      <tr>
+        <td><%= training.location %></td>
+        <td><%= training.organizer %></td>
+        <td><%= training.startdate %></td>
+        <td><%= training.enddate %></td>
+        <td><%= training.name_surname %></td>
+        <td><%= training.gender %></td>
+        <td><%= training.provenance_district %></td>
+        <td><%= training.place_of_work %></td>
+        <td><%= training.position %></td>
+        <td><%= training.qualification %></td>
+        <td><%= training.telephone %></td>
+        <td><%= training.email %></td>
+        <td><%= training.duration_days %></td>
+        <td><%= training.type_name_of_training %></td>
+        <td><%= training.pre_test %></td>
+        <td><%= training.post_test %></td>
+        <td><%= training.date_of_post_training_follow_up %></td>
+        <td><%= training.technical_area %></td>
+        <td><%= link_to 'Show', training %></td>
+        <td><%= link_to 'Edit', edit_training_path(training) %></td>
+        <td><%= link_to 'Destroy', training, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Training', new_training_path %>

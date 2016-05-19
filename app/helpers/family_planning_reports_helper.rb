@@ -1,0 +1,2 @@
+module FamilyPlanningReportsHelper
+end
