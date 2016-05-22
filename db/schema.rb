@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 20160519164904) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
   end
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
@@ -210,44 +212,11 @@ ActiveRecord::Schema.define(version: 20160519164904) do
 
   add_index "hmis_reports", ["facility_id"], name: "index_hmis_reports_on_facility_id", using: :btree
 
-  create_table "mopdd_reports", force: :cascade do |t|
-    t.date     "periode"
-    t.integer  "malaria_confirmed",          limit: 4
-    t.integer  "malaria_confirmed_notified", limit: 4
-    t.integer  "malaria_index_investigated", limit: 4
-    t.integer  "facility_id",                limit: 4
-    t.datetime "created_at",                           null: false
-    t.datetime "updated_at",                           null: false
-  end
-
-  add_index "mopdd_reports", ["facility_id"], name: "index_mopdd_reports_on_facility_id", using: :btree
-
   create_table "provinces", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
-
-  create_table "siscom_reports", force: :cascade do |t|
-    t.date     "Periode"
-    t.integer  "Diarrhea2_59months",                    limit: 4
-    t.integer  "Pneumonia2_59months",                   limit: 4
-    t.integer  "Accouchement_domicile",                 limit: 4
-    t.integer  "Micropostal",                           limit: 4
-    t.integer  "Active_CHWs",                           limit: 4
-    t.integer  "Total_CHWs",                            limit: 4
-    t.integer  "Total_red_alert",                       limit: 4
-    t.integer  "Responce_red_alert",                    limit: 4
-    t.integer  "RDT_positive",                          limit: 4
-    t.integer  "RDT_negative",                          limit: 4
-    t.integer  "Malaria_6_59months_treated_before_24h", limit: 4
-    t.integer  "Malaria_6_59months_treated_after_24h",  limit: 4
-    t.integer  "facility_id",                           limit: 4
-    t.datetime "created_at",                                      null: false
-    t.datetime "updated_at",                                      null: false
-  end
-
-  add_index "siscom_reports", ["facility_id"], name: "index_siscom_reports_on_facility_id", using: :btree
 
   create_table "trainings", force: :cascade do |t|
     t.string   "location",                        limit: 255
@@ -280,6 +249,4 @@ ActiveRecord::Schema.define(version: 20160519164904) do
   add_foreign_key "family_planning_reports", "facilities"
   add_foreign_key "gender_reports", "districts"
   add_foreign_key "hmis_reports", "facilities"
-  add_foreign_key "mopdd_reports", "facilities"
-  add_foreign_key "siscom_reports", "facilities"
 end
